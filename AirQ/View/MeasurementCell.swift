@@ -13,8 +13,8 @@ struct MeasurementCell: View {
         HStack() {
             Text("\(measurement.parameter)").fontWeight(.bold)
             Spacer()
-            Text("\(measurement.value)")
-            Text("\(measurement.unit)")
+            Text("\(String(format: "%.2f", measurement.value))")
+            Text("\(measurement.unit)").font(.footnote)
         }
     }
 }
