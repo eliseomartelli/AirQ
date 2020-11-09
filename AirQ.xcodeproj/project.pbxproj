@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		551750352559819500A81C81 /* AirQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750342559819500A81C81 /* AirQApp.swift */; };
+		551750372559819500A81C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750362559819500A81C81 /* ContentView.swift */; };
+		551750392559819800A81C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551750382559819800A81C81 /* Assets.xcassets */; };
+		5517503C2559819800A81C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5517503B2559819800A81C81 /* Preview Assets.xcassets */; };
+		551750472559819800A81C81 /* AirQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750462559819800A81C81 /* AirQTests.swift */; };
+		551750522559819800A81C81 /* AirQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750512559819800A81C81 /* AirQUITests.swift */; };
+		551750642559862900A81C81 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750632559862900A81C81 /* LocationCell.swift */; };
+		5517506D2559866400A81C81 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517506C2559866400A81C81 /* Result.swift */; };
+		55175072255986B600A81C81 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55175071255986B600A81C81 /* Measurement.swift */; };
+		551750782559872600A81C81 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750772559872600A81C81 /* HomeViewModel.swift */; };
+		551750802559893400A81C81 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517507F2559893400A81C81 /* Home.swift */; };
+		551750852559899B00A81C81 /* MeasurementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551750842559899B00A81C81 /* MeasurementCell.swift */; };
+		5517508A25598DDA00A81C81 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517508925598DDA00A81C81 /* DataWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		551750432559819800A81C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551750292559819500A81C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551750302559819500A81C81;
+			remoteInfo = AirQ;
+		};
+		5517504E2559819800A81C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551750292559819500A81C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551750302559819500A81C81;
+			remoteInfo = AirQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		551750312559819500A81C81 /* AirQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		551750342559819500A81C81 /* AirQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQApp.swift; sourceTree = "<group>"; };
+		551750362559819500A81C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		551750382559819800A81C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5517503B2559819800A81C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5517503D2559819800A81C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551750422559819800A81C81 /* AirQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		551750462559819800A81C81 /* AirQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQTests.swift; sourceTree = "<group>"; };
+		551750482559819800A81C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5517504D2559819800A81C81 /* AirQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		551750512559819800A81C81 /* AirQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQUITests.swift; sourceTree = "<group>"; };
+		551750532559819800A81C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551750632559862900A81C81 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		5517506C2559866400A81C81 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		55175071255986B600A81C81 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		551750772559872600A81C81 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5517507F2559893400A81C81 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		551750842559899B00A81C81 /* MeasurementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementCell.swift; sourceTree = "<group>"; };
+		5517508925598DDA00A81C81 /* DataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5517502E2559819500A81C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5517503F2559819800A81C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5517504A2559819800A81C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		551750282559819500A81C81 = {
+			isa = PBXGroup;
+			children = (
+				551750332559819500A81C81 /* AirQ */,
+				551750452559819800A81C81 /* AirQTests */,
+				551750502559819800A81C81 /* AirQUITests */,
+				551750322559819500A81C81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		551750322559819500A81C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				551750312559819500A81C81 /* AirQ.app */,
+				551750422559819800A81C81 /* AirQTests.xctest */,
+				5517504D2559819800A81C81 /* AirQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		551750332559819500A81C81 /* AirQ */ = {
+			isa = PBXGroup;
+			children = (
+				551750762559871A00A81C81 /* ViewModel */,
+				5517506B2559864F00A81C81 /* Model */,
+				55175062255985FB00A81C81 /* View */,
+				551750342559819500A81C81 /* AirQApp.swift */,
+				551750362559819500A81C81 /* ContentView.swift */,
+				551750382559819800A81C81 /* Assets.xcassets */,
+				5517503D2559819800A81C81 /* Info.plist */,
+				5517503A2559819800A81C81 /* Preview Content */,
+			);
+			path = AirQ;
+			sourceTree = "<group>";
+		};
+		5517503A2559819800A81C81 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5517503B2559819800A81C81 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		551750452559819800A81C81 /* AirQTests */ = {
+			isa = PBXGroup;
+			children = (
+				551750462559819800A81C81 /* AirQTests.swift */,
+				551750482559819800A81C81 /* Info.plist */,
+			);
+			path = AirQTests;
+			sourceTree = "<group>";
+		};
+		551750502559819800A81C81 /* AirQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				551750512559819800A81C81 /* AirQUITests.swift */,
+				551750532559819800A81C81 /* Info.plist */,
+			);
+			path = AirQUITests;
+			sourceTree = "<group>";
+		};
+		55175062255985FB00A81C81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				551750632559862900A81C81 /* LocationCell.swift */,
+				5517507F2559893400A81C81 /* Home.swift */,
+				551750842559899B00A81C81 /* MeasurementCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5517506B2559864F00A81C81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5517506C2559866400A81C81 /* Result.swift */,
+				55175071255986B600A81C81 /* Measurement.swift */,
+				5517508925598DDA00A81C81 /* DataWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		551750762559871A00A81C81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				551750772559872600A81C81 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		551750302559819500A81C81 /* AirQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551750562559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQ" */;
+			buildPhases = (
+				5517502D2559819500A81C81 /* Sources */,
+				5517502E2559819500A81C81 /* Frameworks */,
+				5517502F2559819500A81C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirQ;
+			productName = AirQ;
+			productReference = 551750312559819500A81C81 /* AirQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		551750412559819800A81C81 /* AirQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551750592559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQTests" */;
+			buildPhases = (
+				5517503E2559819800A81C81 /* Sources */,
+				5517503F2559819800A81C81 /* Frameworks */,
+				551750402559819800A81C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				551750442559819800A81C81 /* PBXTargetDependency */,
+			);
+			name = AirQTests;
+			productName = AirQTests;
+			productReference = 551750422559819800A81C81 /* AirQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5517504C2559819800A81C81 /* AirQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5517505C2559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQUITests" */;
+			buildPhases = (
+				551750492559819800A81C81 /* Sources */,
+				5517504A2559819800A81C81 /* Frameworks */,
+				5517504B2559819800A81C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5517504F2559819800A81C81 /* PBXTargetDependency */,
+			);
+			name = AirQUITests;
+			productName = AirQUITests;
+			productReference = 5517504D2559819800A81C81 /* AirQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		551750292559819500A81C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					551750302559819500A81C81 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					551750412559819800A81C81 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 551750302559819500A81C81;
+					};
+					5517504C2559819800A81C81 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 551750302559819500A81C81;
+					};
+				};
+			};
+			buildConfigurationList = 5517502C2559819500A81C81 /* Build configuration list for PBXProject "AirQ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 551750282559819500A81C81;
+			productRefGroup = 551750322559819500A81C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				551750302559819500A81C81 /* AirQ */,
+				551750412559819800A81C81 /* AirQTests */,
+				5517504C2559819800A81C81 /* AirQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5517502F2559819500A81C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5517503C2559819800A81C81 /* Preview Assets.xcassets in Resources */,
+				551750392559819800A81C81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551750402559819800A81C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5517504B2559819800A81C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5517502D2559819500A81C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551750642559862900A81C81 /* LocationCell.swift in Sources */,
+				551750782559872600A81C81 /* HomeViewModel.swift in Sources */,
+				551750372559819500A81C81 /* ContentView.swift in Sources */,
+				55175072255986B600A81C81 /* Measurement.swift in Sources */,
+				5517506D2559866400A81C81 /* Result.swift in Sources */,
+				551750352559819500A81C81 /* AirQApp.swift in Sources */,
+				551750852559899B00A81C81 /* MeasurementCell.swift in Sources */,
+				5517508A25598DDA00A81C81 /* DataWrapper.swift in Sources */,
+				551750802559893400A81C81 /* Home.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5517503E2559819800A81C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551750472559819800A81C81 /* AirQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551750492559819800A81C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551750522559819800A81C81 /* AirQUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		551750442559819800A81C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551750302559819500A81C81 /* AirQ */;
+			targetProxy = 551750432559819800A81C81 /* PBXContainerItemProxy */;
+		};
+		5517504F2559819800A81C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551750302559819500A81C81 /* AirQ */;
+			targetProxy = 5517504E2559819800A81C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		551750542559819800A81C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		551750552559819800A81C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		551750572559819800A81C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AirQ/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AirQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		551750582559819800A81C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AirQ/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AirQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5517505A2559819800A81C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				INFOPLIST_FILE = AirQTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirQ.app/AirQ";
+			};
+			name = Debug;
+		};
+		5517505B2559819800A81C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				INFOPLIST_FILE = AirQTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirQ.app/AirQ";
+			};
+			name = Release;
+		};
+		5517505D2559819800A81C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				INFOPLIST_FILE = AirQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirQ;
+			};
+			name = Debug;
+		};
+		5517505E2559819800A81C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				INFOPLIST_FILE = AirQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.AirQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirQ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5517502C2559819500A81C81 /* Build configuration list for PBXProject "AirQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551750542559819800A81C81 /* Debug */,
+				551750552559819800A81C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551750562559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551750572559819800A81C81 /* Debug */,
+				551750582559819800A81C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551750592559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5517505A2559819800A81C81 /* Debug */,
+				5517505B2559819800A81C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5517505C2559819800A81C81 /* Build configuration list for PBXNativeTarget "AirQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5517505D2559819800A81C81 /* Debug */,
+				5517505E2559819800A81C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 551750292559819500A81C81 /* Project object */;
+}
